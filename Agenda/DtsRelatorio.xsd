@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DtsRelatorio" targetNamespace="http://tempuri.org/DtsRelatorio.xsd" xmlns:mstns="http://tempuri.org/DtsRelatorio.xsd" xmlns="http://tempuri.org/DtsRelatorio.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DtsRelatorio" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DtsRelatorio" msprop:Generator_UserDSName="DtsRelatorio">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblResultado" msprop:Generator_TableClassName="tblResultadoDataTable" msprop:Generator_TableVarName="tabletblResultado" msprop:Generator_TablePropName="tblResultado" msprop:Generator_RowDeletingName="tblResultadoRowDeleting" msprop:Generator_UserTableName="tblResultado" msprop:Generator_RowChangingName="tblResultadoRowChanging" msprop:Generator_RowEvHandlerName="tblResultadoRowChangeEventHandler" msprop:Generator_RowDeletedName="tblResultadoRowDeleted" msprop:Generator_RowEvArgName="tblResultadoRowChangeEvent" msprop:Generator_RowChangedName="tblResultadoRowChanged" msprop:Generator_RowClassName="tblResultadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATA_AGENDAMENTO" msprop:Generator_ColumnVarNameInTable="columnDATA_AGENDAMENTO" msprop:Generator_ColumnPropNameInRow="DATA_AGENDAMENTO" msprop:Generator_ColumnPropNameInTable="DATA_AGENDAMENTOColumn" msprop:Generator_UserColumnName="DATA_AGENDAMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="DATA_AUTORIZACAO_GUIA" msprop:Generator_ColumnVarNameInTable="columnDATA_AUTORIZACAO_GUIA" msprop:Generator_ColumnPropNameInRow="DATA_AUTORIZACAO_GUIA" msprop:Generator_ColumnPropNameInTable="DATA_AUTORIZACAO_GUIAColumn" msprop:Generator_UserColumnName="DATA_AUTORIZACAO_GUIA" type="xs:string" minOccurs="0" />
+              <xs:element name="DATA_VENCIMENTO_GUIA" msprop:Generator_ColumnVarNameInTable="columnDATA_VENCIMENTO_GUIA" msprop:Generator_ColumnPropNameInRow="DATA_VENCIMENTO_GUIA" msprop:Generator_ColumnPropNameInTable="DATA_VENCIMENTO_GUIAColumn" msprop:Generator_UserColumnName="DATA_VENCIMENTO_GUIA" type="xs:string" minOccurs="0" />
+              <xs:element name="CARTEIRINHA" msprop:Generator_ColumnVarNameInTable="columnCARTEIRINHA" msprop:Generator_ColumnPropNameInRow="CARTEIRINHA" msprop:Generator_ColumnPropNameInTable="CARTEIRINHAColumn" msprop:Generator_UserColumnName="CARTEIRINHA" type="xs:string" minOccurs="0" />
+              <xs:element name="NOME_PACIENTE" msprop:Generator_ColumnVarNameInTable="columnNOME_PACIENTE" msprop:Generator_ColumnPropNameInRow="NOME_PACIENTE" msprop:Generator_ColumnPropNameInTable="NOME_PACIENTEColumn" msprop:Generator_UserColumnName="NOME_PACIENTE" type="xs:string" minOccurs="0" />
+              <xs:element name="NOME_FISIOTERAPEUTA" msprop:Generator_ColumnVarNameInTable="columnNOME_FISIOTERAPEUTA" msprop:Generator_ColumnPropNameInRow="NOME_FISIOTERAPEUTA" msprop:Generator_ColumnPropNameInTable="NOME_FISIOTERAPEUTAColumn" msprop:Generator_UserColumnName="NOME_FISIOTERAPEUTA" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGO_PROCEDIMENTO" msprop:Generator_ColumnVarNameInTable="columnCODIGO_PROCEDIMENTO" msprop:Generator_ColumnPropNameInRow="CODIGO_PROCEDIMENTO" msprop:Generator_ColumnPropNameInTable="CODIGO_PROCEDIMENTOColumn" msprop:Generator_UserColumnName="CODIGO_PROCEDIMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="NOME_PROCEDIMENTO" msprop:Generator_ColumnVarNameInTable="columnNOME_PROCEDIMENTO" msprop:Generator_ColumnPropNameInRow="NOME_PROCEDIMENTO" msprop:Generator_ColumnPropNameInTable="NOME_PROCEDIMENTOColumn" msprop:Generator_UserColumnName="NOME_PROCEDIMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="VLPROCEDIMENTO" msprop:Generator_ColumnVarNameInTable="columnVLPROCEDIMENTO" msprop:Generator_ColumnPropNameInRow="VLPROCEDIMENTO" msprop:Generator_ColumnPropNameInTable="VLPROCEDIMENTOColumn" msprop:Generator_UserColumnName="VLPROCEDIMENTO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

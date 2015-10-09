@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14938450-3BBB-4832-93AC-C1C813FEFF54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agenda</RootNamespace>
+    <AssemblyName>Agenda</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons\documentation.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Apis">
+      <HintPath>..\packages\Google.Apis.1.8.1\lib\net40\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth">
+      <HintPath>..\packages\Google.Apis.Auth.1.8.1\lib\net40\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices">
+      <HintPath>..\packages\Google.Apis.Auth.1.8.1\lib\net40\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core">
+      <HintPath>..\packages\Google.Apis.Core.1.8.1\lib\portable-net4+sl4+wp71+win8\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v2">
+      <HintPath>..\packages\Google.Apis.Drive.v2.1.8.1.1190\lib\portable-net4+sl4+wp71+win8\Google.Apis.Drive.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices">
+      <HintPath>..\packages\Google.Apis.1.8.1\lib\net40\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-client\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.5\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.7\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.1.10\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.1.10\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.1.10\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>..\packages\Microsoft.Net.Http.2.1.10\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.7\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.7\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zlib.Portable">
+      <HintPath>..\packages\Zlib.Portable.1.9.2\lib\portable-net4+sl4+wp71+win8\Zlib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsConexaoBD.cs" />
+    <Compile Include="DtsRelatorio.cs">
+      <DependentUpon>DtsRelatorio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DtsRelatorio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DtsRelatorio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgenda.Designer.cs">
+      <DependentUpon>frmAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackup.Designer.cs">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarLembretes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarLembretes.Designer.cs">
+      <DependentUpon>frmConsultarLembretes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIncluirAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIncluirAgendamento.Designer.cs">
+      <DependentUpon>frmIncluirAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLembrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLembrete.Designer.cs">
+      <DependentUpon>frmLembrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotas.Designer.cs">
+      <DependentUpon>frmNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotificacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotificacao.Designer.cs">
+      <DependentUpon>frmNotificacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcedimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcedimentos.Designer.cs">
+      <DependentUpon>frmProcedimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaciente.Designer.cs">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorio.Designer.cs">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VWAgenda.cs" />
+    <EmbeddedResource Include="frmAgenda.resx">
+      <DependentUpon>frmAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackup.resx">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarLembretes.resx">
+      <DependentUpon>frmConsultarLembretes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIncluirAgendamento.resx">
+      <DependentUpon>frmIncluirAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLembrete.resx">
+      <DependentUpon>frmLembrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotas.resx">
+      <DependentUpon>frmNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotificacao.resx">
+      <DependentUpon>frmNotificacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcedimentos.resx">
+      <DependentUpon>frmProcedimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaciente.resx">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorio.resx">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAgendamentos.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAgendamentosSimplificado.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="DtsRelatorio.xsc">
+      <DependentUpon>DtsRelatorio.xsd</DependentUpon>
+    </None>
+    <None Include="DtsRelatorio.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DtsRelatorio.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DtsRelatorio.xss">
+      <DependentUpon>DtsRelatorio.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\documentation.ico" />
+    <None Include="Resources\notepad.ico" />
+    <None Include="Resources\notepad.png" />
+    <None Include="Resources\preferences-desktop-color.ico" />
+    <None Include="Resources\preferences-desktop-color.png" />
+    <None Include="Resources\system-search.png" />
+    <None Include="Resources\system-search.ico" />
+    <None Include="Resources\mail-message-new-3.ico" />
+    <None Include="Resources\newtodo.png" />
+    <None Include="Resources\note-add.png" />
+    <None Include="Resources\application-x-kchart.png" />
+    <None Include="Resources\dialog-fewer.png" />
+    <None Include="Resources\document-print.png" />
+    <None Include="Resources\document-close.png" />
+    <None Include="Resources\dialog-more.png" />
+    <None Include="Resources\address-book-new-3.png" />
+    <None Include="Resources\address-book-new-3.ico" />
+    <None Include="Resources\office-chart-area-stacked.ico" />
+    <None Include="Resources\system-run-3.png" />
+    <None Include="Resources\user-add.png" />
+    <None Include="Resources\document-save-5.png" />
+    <None Include="Resources\system-log-out.png" />
+    <None Include="Resources\office-chart-area-stacked.png" />
+    <None Include="Resources\edit-4.png" />
+    <None Include="Resources\system-switch-user.png" />
+    <None Include="Resources\document-save-all.png" />
+    <None Include="Resources\system-switch-user.ico" />
+    <None Include="Resources\system-run-3.ico" />
+    <None Include="Resources\system-log-out.ico" />
+    <None Include="Resources\edit-4.ico" />
+    <None Include="Resources\document-save-all.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
